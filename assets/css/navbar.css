@@ -5,8 +5,13 @@
 	--bg-section: #11052c;
 	--purple-dark: #4e148c;
 	--purple-normal: #4e148c;
+	--purple-normal-hover: #5f239e;
 	--purple-light: #858ae3;
+	--purple-light-hover: #767aca;
+	--blue-light: #97dffc;
 	--white-light: #f2f2f2;
+	--gray-light: #c4c4c4;
+	--grey: #6c757d;
 }
 
 * {
@@ -30,9 +35,12 @@ ul {
 }
 
 .inner-width {
-	max-width: 1400px;
-	padding: 0 10px;
-	margin: auto;
+	padding: 0 4%;
+	margin: 0 auto !important;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	background-color: var(--bg-section);
 }
 
 .logo {
@@ -91,23 +99,59 @@ ul {
 }
 
 .btn-transparant {
-	background-color: transparent;
+	color: #fff;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	z-index: 0;
+	background: transparent;
 	color: var(--white-light);
 }
-
 .btn-transparant:hover {
-	background-color: transparent;
-	color: var(--purple-light);
-	border: 1px solid var(--purple-light);
+	color: #fff;
+}
+.btn-transparant:hover:after {
+	width: 100%;
+}
+.btn-transparant:after {
+	content: '';
+	border-radius: 4px;
+	position: absolute;
+	z-index: -1;
+	transition: all 0.3s ease;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background: var(--purple-light);
 }
 
 .btn-purple {
-	background-color: var(--purple-normal);
-	color: var(--white-light);
+	color: #fff;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border: none;
+	background: var(--purple-normal);
+	z-index: 1;
 }
-
-.btn-purple:hover {
-	background-color: #46137d;
+.btn-purple:hover:after {
+	width: 100%;
+	left: 0;
+}
+.btn-purple:after {
+	border-radius: 4px;
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 100%;
+	top: 0;
+	z-index: -1;
+	transition: all 0.3s ease;
+	background-color: var(--purple-normal-hover);
+	right: 0;
 }
 
 .navigation-menu.active {
@@ -167,7 +211,10 @@ ul {
 	display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
+	.inner-width {
+		padding: 0 4%;
+	}
 	.menu-toggle-btn {
 		display: block;
 		cursor: pointer;
