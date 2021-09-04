@@ -117,6 +117,8 @@
 	text-transform: capitalize;
 	text-align: center;
 	font-family: var(--primary-font);
+	font-size: 32px;
+	font-weight: 600;
 }
 
 .row {
@@ -190,7 +192,7 @@
 
 .caption-text h1 {
 	margin-bottom: 40px;
-	font-size: 26px;
+	font-size: 32px;
 	font-family: var(--primary-font);
 	text-transform: capitalize;
 }
@@ -388,6 +390,9 @@ footer {
 	}
 
 	/* Spesial */
+	#special h1 {
+		font-size: 26px;
+	}
 	.card {
 		margin: 40px 0;
 		width: 500px;
@@ -451,6 +456,9 @@ footer {
 }
 
 @media only screen and (max-width: 580px) {
+	#special h1 {
+		font-size: 22px;
+	}
 	.card {
 		width: 300px;
 		padding: 15%;

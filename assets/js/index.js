@@ -10,6 +10,7 @@ $('.dropdown-toggle').hover(function () {
 });
 
 // Counter
+
 $('.counter').each(function () {
 	const This = $(this);
 	$({ Count: This.text() }).animate(
