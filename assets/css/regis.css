@@ -80,6 +80,9 @@ input:focus {
 	font-size: 12px;
 	text-align: left;
 }
+.check p a {
+	font-size: 12px;
+}
 .check input {
 	position: absolute;
 	opacity: 0;
