@@ -6,7 +6,7 @@ body {
 
 .card {
 	background-color: var(--bg-section);
-	width: 700px;
+	width: 40%;
 	margin: 60px auto 0;
 	padding: 3% 3%;
 	border-radius: 18px;
@@ -30,12 +30,48 @@ body {
 	font-weight: 400;
 }
 
-.data input {
+input {
 	width: 100%;
-	height: 40px;
-	border-radius: 6px;
-	padding: 10px;
+	height: 50px;
+	border-radius: 8px;
+	padding: 12px 20px 12px 50px;
 	margin: 10px 0 18px;
+	border: none;
+	color: var(--purple-normal);
+	font-size: 14px;
+}
+input[type='email']:focus,
+input[type='password']:focus {
+	border: none !important;
+	box-shadow: none;
+	outline: none;
+}
+input[type='email'] {
+	background-image: url(../images/user-solid-24.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	transition: 0.3s;
+}
+input[type='email']:focus {
+	background-image: url(../images/user-solid.png);
+}
+input[type='password'] {
+	background-image: url(../images/lock-alt-solid-24.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	transition: 0.3s;
+}
+input[type='password']:focus {
+	background-image: url(../images/lock-alt-solid.png);
+}
+.focus-visible {
+	outline: none;
+}
+::placeholder {
+	color: var(--placeholder);
+	font-family: 'Poppins';
+	font-size: 14px;
+	font-weight: 400;
 }
 .data a {
 	text-decoration: none;
@@ -54,8 +90,8 @@ button {
 	width: 100%;
 	padding: 16px;
 	font-family: var(--primary-font);
-	font-weight: 300;
-	font-size: 16px;
+	font-weight: 400;
+	font-size: 18px;
 	cursor: pointer;
 	border-radius: 25px;
 	border: none;
@@ -105,4 +141,21 @@ p {
 }
 .login-with i:hover {
 	color: var(--purple-light);
+}
+
+@media screen and (max-width: 780px) {
+	.card {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.card {
+		width: 90%;
+		padding: 7% 4%;
+		margin: 40px auto 0;
+	}
+	.card-header img {
+		width: 20%;
+	}
 }
