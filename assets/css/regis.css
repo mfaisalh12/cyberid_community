@@ -1,0 +1,175 @@
+body {
+	background-color: var(--bg);
+	max-width: 1440px;
+	margin: auto;
+	padding: 30px;
+}
+
+.card {
+	background-color: var(--bg-section);
+	width: 40%;
+	margin: auto;
+	padding: 3% 3%;
+	border-radius: 14px;
+	color: var(--white-light);
+}
+
+.card-header {
+	text-align: center;
+	margin-bottom: 7%;
+}
+.card-header img {
+	width: 12%;
+}
+
+.card-body {
+	text-align: left;
+}
+.data label {
+	font-family: var(--primary-font);
+	font-size: 18px;
+	font-weight: 400;
+}
+
+input {
+	width: 100%;
+	height: 50px;
+	border-radius: 8px;
+	padding: 12px 20px 12px 25px;
+	margin: 10px 0 18px;
+	border: none;
+	color: var(--purple-normal);
+	font-size: 14px;
+}
+input:focus {
+	border: none !important;
+	box-shadow: none;
+	outline: none;
+}
+
+.focus-visible {
+	outline: none;
+}
+::placeholder {
+	color: var(--placeholder);
+	font-family: 'Poppins';
+	font-size: 14px;
+	font-weight: 400;
+}
+.data a {
+	text-decoration: none;
+	color: var(--purple-light);
+	font-size: 14px;
+}
+.data a:hover {
+	color: var(--purple-light-hover);
+}
+.check {
+	display: block;
+	position: relative;
+	padding-left: 22px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 12px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.check p {
+	font-size: 12px;
+	text-align: left;
+}
+.check input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.checkmark {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	height: 12px;
+	width: 12px;
+	background-color: #eee;
+}
+.check:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+.check input:checked ~ .checkmark:after {
+	display: block;
+}
+.check .checkmark:after {
+	left: 4px;
+	top: -4px;
+	width: 5px;
+	height: 10px;
+	border: solid var(--purple-light-hover);
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+button {
+	width: 100%;
+	padding: 16px;
+	font-family: var(--primary-font);
+	font-weight: 400;
+	font-size: 18px;
+	cursor: pointer;
+	border-radius: 25px;
+	border: none;
+	color: var(--white-light);
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	background: var(--purple-normal);
+	z-index: 1;
+}
+button:hover:after {
+	width: 100%;
+	left: 0;
+}
+button:after {
+	border-radius: 25px;
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 100%;
+	top: 0;
+	z-index: -1;
+	transition: all 0.3s ease;
+	background-color: var(--purple-normal-hover);
+	right: 0;
+}
+
+p {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 780px) {
+	.card {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.card {
+		width: 90%;
+		padding: 7% 4%;
+		margin: 40px auto 0;
+	}
+	.card-header img {
+		width: 20%;
+	}
+}
