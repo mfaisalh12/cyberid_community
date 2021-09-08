@@ -237,6 +237,7 @@ input[type='text']:focus {
 .tag {
 	background-color: var(--bg-tag);
 	width: 30%;
+	height: 40%;
 	padding: 20px;
 	color: var(--white-light);
 }
