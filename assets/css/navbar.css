@@ -3,6 +3,7 @@
 	--secondary-font: 'Poppins', sans-serif;
 	--bg: #291e41;
 	--bg-section: #11052c;
+	--bg-tag: #240d47;
 	--purple-dark: #4e148c;
 	--purple-normal: #4e148c;
 	--purple-normal-hover: #5f239e;
@@ -52,7 +53,9 @@ ul {
 .logo img {
 	height: 50px;
 }
-
+.purple-light {
+	color: var(--purple-light) !important;
+}
 .nav-right button,
 .navigation-menu {
 	font-family: var(--primary-font);
