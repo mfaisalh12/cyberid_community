@@ -55,6 +55,9 @@ footer {
 	font-weight: 400;
 	margin-bottom: 8px;
 }
+.additional-desc a:hover {
+	color: var(--gray-light) !important;
+}
 
 @media only screen and (max-width: 780px) {
 	/* Footer */

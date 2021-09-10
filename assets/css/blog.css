@@ -193,6 +193,12 @@ input[type='text']:focus {
 .header-card p {
 	margin: auto 0;
 }
+
+.author,
+.title-card h3,
+.icon-card i {
+	cursor: pointer;
+}
 .author h5 {
 	color: var(--gray-light);
 	font-weight: 400;

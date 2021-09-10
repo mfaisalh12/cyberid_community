@@ -48,6 +48,7 @@
 	border-radius: 4px;
 	padding: 8px 14px;
 	color: var(--white-light);
+	transition: 0.2s;
 }
 
 .col-1 a:hover {
@@ -203,6 +204,7 @@
 	background-color: var(--purple-light);
 	padding: 8px 50px;
 	border-radius: 8px;
+	transition: 0.2s;
 }
 .caption-text a:hover {
 	background-color: var(--purple-light-hover);
