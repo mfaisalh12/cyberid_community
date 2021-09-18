@@ -150,11 +150,25 @@
 	font-size: 18px;
 }
 .header-card p {
-	background: var(--purple-light);
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 300;
 	padding: 2px 10px;
 	margin: auto 0;
+}
+.mudah {
+	background: #70ad72;
+	border-radius: 4px;
+	border: 1px solid var(--white-light);
+}
+.sedang {
+	background: var(--purple-light);
+	border-radius: 4px;
+	border: 1px solid var(--white-light);
+}
+.sulit {
+	background: #d8616d;
+	border-radius: 4px;
+	border: 1px solid var(--white-light);
 }
 .mid-card {
 	justify-content: start;
