@@ -18,6 +18,10 @@ footer {
 	color: var(--white-light);
 }
 
+#container-footer a:hover {
+	color: var(--gray-light);
+}
+
 .desc {
 	width: 30%;
 }
@@ -41,6 +45,7 @@ footer {
 }
 .footer-icon a:hover i {
 	transform: translateY(5px);
+	color: var(--white-light);
 }
 
 .additional-desc h3 {
