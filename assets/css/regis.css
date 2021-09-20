@@ -46,7 +46,19 @@ input:focus {
 	box-shadow: none;
 	outline: none;
 }
-
+.password {
+	position: relative;
+}
+#eye2,
+#eye1 {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	color: var(--grey);
+	font-size: 24px;
+	transform: translateY(-60%);
+	cursor: pointer;
+}
 .focus-visible {
 	outline: none;
 }

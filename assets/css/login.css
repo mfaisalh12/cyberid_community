@@ -3,7 +3,9 @@ body {
 	max-width: 1440px;
 	margin: auto;
 }
-
+.flex {
+	display: flex;
+}
 .card {
 	background-color: var(--bg-section);
 	width: 40%;
@@ -55,13 +57,13 @@ input[type='email'] {
 input[type='email']:focus {
 	background-image: url(../images/user-solid.png);
 }
-input[type='password'] {
+#password {
 	background-image: url(../images/lock-alt-solid-24.png);
 	background-repeat: no-repeat;
 	background-position: 10px 10px;
 	transition: 0.3s;
 }
-input[type='password']:focus {
+#password:focus {
 	background-image: url(../images/lock-alt-solid.png);
 }
 .focus-visible {
@@ -72,6 +74,18 @@ input[type='password']:focus {
 	font-family: 'Poppins';
 	font-size: 14px;
 	font-weight: 400;
+}
+.password {
+	position: relative;
+}
+#eye {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	color: var(--grey);
+	font-size: 24px;
+	transform: translateY(-60%);
+	cursor: pointer;
 }
 .data a {
 	text-decoration: none;

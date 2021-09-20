@@ -34,7 +34,10 @@
           <input type="email" placeholder="Type your username or email" required>
 
           <label for="">Password</label>
-          <input type="password" placeholder="Type your password">
+          <div class="password flex">
+            <input type="password" placeholder="Type your password" id="password">
+            <i class='bx bxs-hide' id="eye"></i>
+          </div>
 
           <a href="" class="lupa-password">Lupa password?</a>
           <button type="submit">Login</button>
@@ -48,6 +51,9 @@
       </form>
     </div>
   </div>
+
+  <script src="../assets/plugin/jquery/jquery.js"></script>
+  <script src="../assets/js/login.js"></script>
 </body>
 
 </html>

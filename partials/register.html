@@ -37,10 +37,16 @@
           <input type="email" placeholder="Type your email" required>
 
           <label for="">Password</label>
-          <input type="password" placeholder="Type your password">
+          <div class="password flex">
+            <input type="password" placeholder="Type your password" id="password1">
+            <i class='bx bxs-hide' id="eye1"></i>
+          </div>
 
           <label for="">Confirm Password</label>
-          <input type="password" placeholder="Re-type your password">
+          <div class="password flex">
+            <input type="password" placeholder="Re-Type your password" id="password2">
+            <i class='bx bxs-hide' id="eye2"></i>
+          </div>
 
           <label class="check">
             <p>Dengan ini saya setuju untuk mengikuti <a href="">Ketentuan Pengguna</a> serta <a href="">Kebijakan
@@ -55,6 +61,9 @@
       </form>
     </div>
   </div>
+
+  <script src="../assets/plugin/jquery/jquery.js"></script>
+  <script src="../assets/js/register.js"></script>
 </body>
 
 </html>
