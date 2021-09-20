@@ -186,6 +186,7 @@ input[type='text']:focus {
 	color: var(--white-light);
 	margin-top: 40px;
 	border-radius: 8px;
+	display: none;
 }
 .header-card img {
 	width: 100%;
@@ -224,11 +225,9 @@ input[type='text']:focus {
 }
 
 .button-body {
-	margin: 40px 0 100px;
-	text-align: center;
-}
-.button-body button {
 	padding: 8px 28px;
+	margin: 40px auto 100px;
+	display: block;
 	border-radius: 25px;
 	border: none;
 	background-color: var(--purple-normal);
@@ -236,7 +235,7 @@ input[type='text']:focus {
 	cursor: pointer;
 	transition: 0.3s;
 }
-.button-body button:hover {
+.button-body:hover {
 	background-color: var(--purple-normal-hover);
 }
 
