@@ -112,6 +112,9 @@ body {
 	font-weight: 300;
 	border-radius: 6px;
 }
+.edit-profile:hover {
+	background: var(--purple-normal-hover);
+}
 .number {
 	margin: 10px 0;
 	font-size: 14px;

@@ -94,17 +94,49 @@
 #jumbotron p {
 	padding: 20px 22%;
 }
+#jumbotron button {
+	padding: 6px 30px;
+	font-size: 14px;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	background-color: var(--purple-light);
+	color: var(--white-light);
+	cursor: pointer;
+	z-index: 0;
+	position: relative;
+}
+#jumbotron button:hover {
+	color: var(--white-light);
+}
+#jumbotron button:hover:after {
+	width: 100%;
+}
+#jumbotron button:after {
+	content: '';
+	border-radius: 4px;
+	position: absolute;
+	z-index: -1;
+	transition: all 0.3s ease;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background-color: var(--purple-light-hover);
+}
 
 /* wave */
 .wave1 {
 	position: absolute;
 	width: 100%;
 	top: 390px;
+	z-index: 0;
 }
 .wave2 {
 	position: absolute;
 	width: 100%;
 	top: 400px;
+	z-index: 1;
 }
 
 /* Search */
@@ -198,6 +230,9 @@ input[type='text']:focus {
 .title-card h3,
 .icon-card i {
 	cursor: pointer;
+}
+.title-card h3:hover {
+	color: var(--gray-light);
 }
 .author h5 {
 	color: var(--gray-light);

@@ -117,10 +117,10 @@ ul {
 .btn-transparant:hover {
 	color: #fff;
 }
-.btn-transparant:hover:after {
+.btn-transparant:hover::after {
 	width: 100%;
 }
-.btn-transparant:after {
+.btn-transparant::after {
 	content: '';
 	border-radius: 4px;
 	position: absolute;
@@ -143,11 +143,11 @@ ul {
 	background: var(--purple-normal);
 	z-index: 1;
 }
-.btn-purple:hover:after {
+.btn-purple:hover::after {
 	width: 100%;
 	left: 0;
 }
-.btn-purple:after {
+.btn-purple::after {
 	border-radius: 4px;
 	position: absolute;
 	content: '';
