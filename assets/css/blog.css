@@ -130,13 +130,11 @@
 	position: absolute;
 	width: 100%;
 	top: 390px;
-	z-index: 0;
 }
 .wave2 {
 	position: absolute;
 	width: 100%;
 	top: 400px;
-	z-index: 1;
 }
 
 /* Search */
@@ -146,7 +144,7 @@
 	padding: 0 4%;
 }
 .search {
-	margin-top: 4%;
+	z-index: 1;
 }
 .search form {
 	display: flex;
@@ -176,6 +174,7 @@ input[type='text'] {
 	background: var(--white-light);
 	font-size: 28px;
 	border: none;
+	border-radius: 0 8px 8px 0;
 	cursor: pointer;
 	color: var(--purple-light);
 }
@@ -367,6 +366,9 @@ input[type='text']:focus {
 }
 
 @media only screen and (max-width: 380px) {
+	#jumbotron p {
+		padding: 20px 10%;
+	}
 	.wave1 {
 		top: 360px;
 	}

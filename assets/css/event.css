@@ -188,6 +188,7 @@
 	background: var(--purple-light);
 	font-size: 18px;
 	border: none;
+	border-radius: 0 2px 2px 0;
 	cursor: pointer;
 	color: var(--white-light);
 	transition: 0.3s;
@@ -386,7 +387,9 @@ input[type='text']:focus {
 	.wave2 {
 		top: 370px;
 	}
-
+	#jumbotron p {
+		padding: 20px 10%;
+	}
 	.card-body h4 {
 		font-size: 14px;
 	}
