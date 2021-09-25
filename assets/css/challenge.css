@@ -139,9 +139,11 @@
 	padding: 2%;
 	cursor: pointer;
 	display: none;
+	box-shadow: 0 4px 4px 0 var(--bg-section), 0 3px 10px 0 var(--bg-section);
 }
 .card-challenge:hover {
 	background: #150a2e;
+	box-shadow: none;
 }
 .header-card {
 	justify-content: space-between;
@@ -248,6 +250,93 @@
 	font-size: 14px;
 }
 
+/* Pertanyaan Baru */
+#pertanyaan {
+	text-align: center;
+	color: var(--white-light);
+	margin: 4%;
+}
+.card-question {
+	background: var(--bg-section);
+	width: 60%;
+	margin: auto;
+	padding: 25px 30px;
+	text-align: start;
+	border-radius: 12px;
+}
+.card-question h1 {
+	text-align: center;
+	font-size: 28px;
+	font-weight: 500;
+}
+.card-question div label,
+.card-question div input,
+.card-question div textarea,
+.card-question div select {
+	width: 100%;
+	display: block;
+	font-size: 16px;
+}
+.card-question div label {
+	margin: 20px 0 6px;
+}
+.judul input,
+.deskripsi textarea,
+.kategori select {
+	font-size: 14px !important;
+	padding: 8px 12px;
+	border: none;
+	border-radius: 3px;
+	background: var(--white-light);
+}
+.deskripsi textarea {
+	height: 100px;
+}
+.judul input:focus,
+.deskripsi textarea:focus,
+.kategori select:focus {
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+small {
+	font-size: 11px;
+	color: var(--gray-lightfull);
+}
+.card-question button {
+	width: 100%;
+	margin: 30px 0 20px;
+	height: 40px;
+	cursor: pointer;
+	background: var(--purple-normal);
+	color: var(--white-light);
+	border: none;
+	outline: none;
+	box-shadow: none;
+	border-radius: 20px;
+	font-size: 16px;
+	transition: 0.3s;
+}
+.card-question button:hover {
+	background: var(--purple-normal-hover);
+}
+.penjelasan-aturan p {
+	font-size: 12px;
+	font-weight: 300;
+}
+.red {
+	color: #ff959e;
+}
+.blue {
+	text-decoration: underline;
+	color: var(--purple-light);
+	cursor: pointer;
+}
+::placeholder {
+	color: var(--grey);
+	font-family: 'Poppins';
+	font-weight: 400;
+}
 @media only screen and (max-width: 1411px) {
 	.card-challenge {
 		width: 48%;
@@ -319,6 +408,10 @@
 	.card-challenge {
 		padding: 15px 10px;
 		margin-top: 10px;
+	}
+
+	.card-question {
+		width: 90%;
 	}
 }
 

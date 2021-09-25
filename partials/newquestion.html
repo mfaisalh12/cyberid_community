@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- boxicons -->
+  <link rel="stylesheet" href="../assets/plugin/boxicons/css/boxicons.css">
+
+  <!-- local css -->
+  <link rel="stylesheet" href="../assets/css/navbar.css">
+  <link rel="stylesheet" href="../assets/css/challenge.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <title>CyberID | Diskusi</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="inner-width">
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/logo.png" alt="">
+      </a>
+      <i class='menu-toggle-btn bx bx-menu'></i>
+      <nav class="navigation-menu">
+        <ul class="nav-left">
+          <li><a href="../index.html">Beranda</a></li>
+          <li><a href="diskusi.html" class="purple-light">Diskusi</a></li>
+          <li><a href="challenge.html">Challenge</a></li>
+          <li class="dropdown dropdown-toggle">
+            <a href="">Info <i class='bx bxs-down-arrow icon-dropdown'></i></a>
+            <ul class="dropdown-content">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="event.html">Event</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav-right">
+          <li class="user flex">
+            <p>Muhammad Faisal H</p>
+            <img src="../assets/images/nav-user.png" width="35" alt="">
+            <div class="menu-user">
+              <div class="left-user-menu">
+                <ul>
+                  <li><i class='bx bxs-user-circle'></i></li>
+                  <li><i class='bx bxs-flag-alt'></i></li>
+                  <li><i class='bx bxs-bookmarks'></i></li>
+                  <li><i class="bx bxs-cog"></i></li>
+                  <li><i class="bx bx-log-out"></i></li>
+                </ul>
+              </div>
+
+              <div class="right-user-menu">
+                <ul>
+                  <li><a href="profile.html">Profile</a></li>
+                  <li><a href="">My Challenge</a></li>
+                  <li><a href="">My Info</a></li>
+                  <li><a href="">Setting</a></li>
+                  <li><a href="../index.html">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- End Navbar -->
+
+  <section id="pertanyaan">
+
+    <div class="card-question">
+      <h1>Diskusi Baru</h1>
+      <div class="judul">
+        <label for="">Judul Pertanyaan</label>
+        <input type="text" placeholder="Judul pertanyaan secara singkat dan jelas">
+      </div>
+      <div class="deskripsi">
+        <label for="">Deskripsi Pertanyaan</label>
+        <textarea name="" id="" placeholder="Tulis penjelasan dari pertanyaanmu dan sertakan foto/code"></textarea>
+
+      </div>
+      <div class="kategori">
+        <label for="">Kategori</label>
+        <select name="" id="">
+          <option value="" disabled selected></option>
+          <option value="">Web</option>
+          <option value="">Forensic</option>
+          <option value="">Binary</option>
+          <option value="">Reverse Engineering</option>
+          <option value="">Cryptography</option>
+          <option value="">Programming</option>
+          <option value="">Miscellaneous</option>
+        </select>
+        <small>Pilih maksimal 3 kategori</small>
+      </div>
+      <button>Submit</button>
+      <div class="penjelasan-aturan">
+        <p><span class="red">*</span> Sebelum menekan tombol submit <span class="red">agar pertanyaanmu tidak
+            dihapus</span> silahkan baca <span class="blue">aturan pertanyaan</span> terlebih dahulu</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div id="container-footer">
+      <div class="desc">
+        <img src="../assets/images/logo-footer.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis eget at arcu risus ridiculus consectetur
+          nullam.</p>
+        <div class="footer-icon">
+          <a href=""><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-instagram-alt"></i></a>
+          <a href=""><i class="bx bxl-telegram"></i></a>
+          <a href=""><i class='bx bxl-discord'></i></a>
+        </div>
+      </div>
+      <div id="layanan" class="additional-desc">
+        <h3>Layanan</h3>
+        <a href="">Tanya jawab</a>
+        <a href="">Challenge</a>
+        <a href="">Blog</a>
+        <a href="">Event</a>
+      </div>
+      <div id="perusahaan" class="additional-desc">
+        <h3>Perusahaan</h3>
+        <a href="">Tentang kami</a>
+        <a href="">FAQ</a>
+        <a href="">Hubungi kami</a>
+      </div>
+      <div id="legalitas" class="additional-desc">
+        <h3>Perusahaan</h3>
+        <a href="">Kebijakan privasi</a>
+        <a href="">Ketentuan dan syarat pengguna</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jquery -->
+  <script src="../assets/plugin/jquery/jquery.js"></script>
+
+  <!-- js -->
+  <script src="../assets/js/index.js" type="text/javascript"></script>
+  <script src="../assets/js/user.js" type="text/javascript"></script>
+  <script src="../assets/js/loadmore.js"></script>
+</body>
+
+</html>

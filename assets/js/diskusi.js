@@ -10,3 +10,7 @@ $(document).ready(function () {
 		$('.tab-content').eq(index).show();
 	});
 });
+
+$('#first-card').click(function () {
+	$(location).prop('href', 'firstquestion.html');
+});

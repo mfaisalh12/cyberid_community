@@ -158,11 +158,12 @@
 	padding: 20px 30px;
 	margin: 10px 0;
 	width: 45%;
-	box-shadow: 0 4px 8px 0 var(--bg-section), 0 6px 20px 0 var(--bg-section);
+	box-shadow: 0 4px 4px 0 var(--bg-section), 0 3px 10px 0 var(--bg-section);
 	cursor: pointer;
 }
 .card:hover {
 	box-shadow: none;
+	background: #150a2e;
 }
 .header-card h3 {
 	font-weight: 500;
@@ -199,6 +200,7 @@
 	max-width: 70%;
 	flex-wrap: wrap;
 }
+
 .footer-card p {
 	margin: 6px 10px 0 0;
 	padding: 3px 12px;
@@ -229,9 +231,210 @@
 	background-color: var(--purple-dark);
 }
 
+.container-question {
+	max-width: 1400px;
+	margin: auto;
+	padding: 4% 0;
+	justify-content: space-between;
+}
+#questions p {
+	color: var(--white-light);
+	font-size: 16px;
+	font-weight: 300;
+}
+#questions p a {
+	color: var(--purple-light);
+	text-decoration: none;
+}
+#questions p a:hover {
+	text-decoration: underline;
+}
+.card-question {
+	background: var(--bg-section);
+	width: 1000px;
+	color: var(--white-light);
+	padding: 30px 40px;
+	margin: 10px 0;
+	border-radius: 8px;
+}
+.header-question {
+	justify-content: space-between;
+}
+.header-question h1 {
+	font-weight: 400;
+}
+.header-question p {
+	margin: auto 0;
+	font-size: 14px !important;
+}
+.header-question p i {
+	margin: auto;
+	font-size: 18px;
+}
+.description-make-it {
+	font-size: 12px !important;
+	color: var(--gray-light) !important;
+	margin: 14px 0 40px;
+}
+.white-light {
+	color: var(--white-light);
+}
+.body-question p {
+	font-size: 14px !important;
+	font-weight: 300;
+}
+.body-question img {
+	display: block;
+	margin: 14px auto;
+	width: 50%;
+}
+.header-footer {
+	margin: 20px 0;
+	justify-content: space-between;
+}
+.tag p {
+	font-size: 12px !important;
+	padding: 3px 12px;
+	border-radius: 3px;
+	margin: 0 10px 0 0;
+}
+.icon i {
+	font-size: 18px;
+	padding-top: 4px !important;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.profile-answer,
+.profile-question {
+	margin: 20px 0 0;
+}
+
+.left-profile img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid var(--white-light);
+}
+
+.right-profile {
+	display: block;
+	margin: auto 0 auto 10px;
+}
+.right-profile p {
+	font-size: 12px !important;
+	margin: 4px 0;
+}
+.name {
+	font-weight: 500 !important;
+}
+.name:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.light-dot {
+	height: 8px;
+	width: 8px;
+	background-color: var(--purple-light);
+	border-radius: 50%;
+	display: inline-block;
+}
+.content-answer,
+.profile-answer {
+	justify-content: space-between;
+}
+.profile-answer .icon {
+	margin: auto 0;
+}
+.answer-detail {
+	width: 80%;
+}
+.answer h1 {
+	margin: 40px 0 0;
+}
+hr {
+	border: 1px solid var(--bg);
+	margin: 20px 0;
+}
+.terpilih h4 {
+	color: limegreen;
+	font-weight: 400;
+	margin-left: 20px;
+}
+.terpilih-content {
+	border-left: 2px solid limegreen;
+	padding: 10px 0 0 20px;
+}
+.normal-answer p,
+.terpilih-content p {
+	font-size: 14px !important;
+	font-weight: 400;
+}
+.balasan {
+	margin-left: 80px;
+}
+.head-balasan {
+	margin: 10px 0;
+	text-decoration: underline;
+}
+.balasan p {
+	font-size: 12px !important;
+	font-weight: 400;
+}
+.left-profile-balasan img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid var(--white-light);
+}
+.right-profile-balasan {
+	display: block;
+	margin: auto 0 auto 10px;
+}
+.right-profile-balasan p {
+	font-size: 11px !important;
+}
+
+.right-side-question {
+	background: var(--bg-section);
+	color: var(--white-light);
+	width: 300px;
+	height: 100%;
+	margin: 34px 0 0;
+	padding: 30px 40px;
+	border-radius: 6px;
+	position: sticky;
+	top: 100px;
+}
+.right-side-question p {
+	text-align: center;
+}
+.bxs-trophy {
+	color: var(--purple-light);
+}
+.top-rank {
+	margin: 25px 0;
+}
+.top-rank img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid var(--white-light);
+}
+.top-rank div p {
+	text-align: left !important;
+	font-size: 12px !important;
+	margin-left: 14px;
+}
+
 @media only screen and (max-width: 1024px) {
 	.card {
 		width: 48%;
+	}
+	.right-side-question {
+		display: none;
+	}
+	.card-question {
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 900px) {
