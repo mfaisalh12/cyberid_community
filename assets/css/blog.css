@@ -279,6 +279,8 @@ input[type='text']:focus {
 	height: 40%;
 	padding: 20px;
 	color: var(--white-light);
+	position: sticky;
+	top: 100px;
 }
 .card-tag h4 {
 	font-weight: 400;

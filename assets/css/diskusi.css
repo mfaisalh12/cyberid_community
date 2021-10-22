@@ -425,6 +425,31 @@ hr {
 	font-size: 12px !important;
 	margin-left: 14px;
 }
+.isian textarea {
+	width: 100%;
+	height: 100px;
+	border: none;
+	padding: 6px 10px;
+	resize: vertical;
+}
+.isian textarea:focus {
+	outline: none;
+	box-shadow: 0 0 8px 3px rgba(99, 193, 255, 0.6);
+}
+.isian button {
+	margin-top: 10px;
+	width: 20%;
+	height: 36px;
+	cursor: pointer;
+	border: none;
+	border-radius: 20px;
+	font-size: 0.9rem;
+	color: var(--white-light);
+	background: var(--purple-normal);
+}
+.isian button:hover {
+	background: var(--purple-normal-hover);
+}
 
 @media only screen and (max-width: 1024px) {
 	.card {
